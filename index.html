@@ -106,14 +106,17 @@ Map of Ottawa with ward boundaries highlighted img
   <section>
 <h3>Ward specific data</h3>
 
-Ward Ward Name Municipal Taxes Percent of Total table
+Ward Ward Name Municipal Taxes Percent o
 
 <table>
+  <thead>
   <tr>
     <th>Ward</th>
     <th>Ward Name</th>
     <th>Municipal Taxes</th> 
     <th>Percent of Total</th>
+  </thead>
+  <tbody>
   </tr>
   <tr>
     <td>1</td>
@@ -265,6 +268,7 @@ Ward Ward Name Municipal Taxes Percent of Total table
   <td>2,030,973,981</td>
   <td>100%</td>
 </tr>
+</tbody>
 </table>
 </section>
 
@@ -289,42 +293,25 @@ form
 <input type="text" id="phone" name="phone">
 
 <label for="ward">Ward:</label>
-  <input list="ward">
-  <datalist id="ward">
-    <option value="1">
-    <option value="2">
-    <option value="3">
-    <option value="4">
-    <option value="5">
-    <option value="6">
-    <option value="7"></option>
-    <option value="8">
-    <option value="9">
-    <option value="10"></option>
-    <option value="11">
-    <option value="12"></option>
-    <option value="13"></option>
-    <option value="14"></option>
-    <option value="15"></option>
-    <option value="16"></option>
-    <option value="17"></option>
-    <option value="18"></option>
-    <option value="19"></option>
-    <option value="20"></option>
-    <option value="21"></option>
-    <option value="22"></option>
-    <option value="23"></option>
-    <option value="24"></option> 
-</datalist>
+ 
 
-Options for Ward 1 - Ward 24
-Feedback:
+<p>Feedback:</p>
 
-Subject/Topic:
+<label for="Subject/Topic">Subject/Topic:</label>
+<input type="text" id="Subject/Topic" name="Subject/Topic">
 
-Feedback Type:
+<label for="Feedback Type">Feedback Type:</label>
+<input type="radio" id="Suggestion" name="Feedback_Type" value="Suggestion">
+<label for="Suggestion">Suggestion</label>
+<input type="radio" id="Concern" name="Feedback_Type" value="Concern">
+<label for="Concern">Concern</label>
+<input type="radio" id="Appreciation" name="Feedback_Type" value="Appreciation">
+<label for="Appreciation">Appreciation</label>
+<input type="radio" id="Feedback" name="Feedback_Type" value="Feedback">
+<label for="Feedback">Feedback</label><br>
 
-Suggestion Concern Appreciation Feedback Details:
+<label for="Details">Details:</label>
+<textarea name="Details" rows="10" cols="40"></textarea> 
 
 Priority Level: Location (if applicable):
 
