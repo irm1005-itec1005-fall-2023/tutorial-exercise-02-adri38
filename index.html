@@ -332,15 +332,21 @@ form
 <input type="radio" id="Concern" name="Feedback_Type" value="Concern">
 <label for="Concern">Concern</label>
 <input type="radio" id="Appreciation" name="Feedback_Type" value="Appreciation">
-<label for="Appreciation">Appreciation</label>
-<input type="radio" id="Feedback" name="Feedback_Type" value="Feedback">
-<label for="Feedback">Feedback</label><br>
+<label for="Appreciation">Appreciation</label><br>
 
-<label for="Details">Details:</label>
+
+<label for="Details">Feedback Details:</label><br>
 <textarea name="Details" rows="10" cols="40"></textarea> 
 
-Priority Level: Location (if applicable):
+<label for="priority level">Priority Level:</label>
+  <select id="priority level" name="priority level">
+    <option value="high">High</option>
+    <option value="medium">Medium</option>
+    <option value="low">Low</option>
+  </select>
 
+<label for="Location if applicable">Location (if applicable):</label>
+<input type="text" id="Location if applicable" name="Location if applicable">
 Follow-up Information:
 
 I would like to receive a follow-up response.
